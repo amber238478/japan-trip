@@ -36,10 +36,10 @@ body{background:var(--bg);color:var(--text);font-family:'Zen Kaku Gothic New',sa
 /* ── NAV ── */
 #nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(247,244,239,0.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:background 0.3s;}
 .nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px;}
-.nav-logo{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:var(--gold);letter-spacing:0.05em;white-space:nowrap;}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:var(--gold);letter-spacing:0.05em;white-space:nowrap;}
 .nav-links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;}
 .nav-links::-webkit-scrollbar{display:none;}
-.nav-link{padding:6px 14px;font-size:11px;letter-spacing:0.2em;color:var(--text2);text-decoration:none;border-radius:var(--radius);transition:color 0.2s,background 0.2s;white-space:nowrap;}
+.nav-link{padding:6px 14px;font-size:13px;letter-spacing:0.2em;color:var(--text2);text-decoration:none;border-radius:var(--radius);transition:color 0.2s,background 0.2s;white-space:nowrap;}
 .nav-link:hover{color:var(--text);background:rgba(0,0,0,0.04);}
 .nav-link.active{color:var(--gold);background:rgba(138,106,48,0.08);}
 
@@ -64,23 +64,23 @@ body{background:var(--bg);color:var(--text);font-family:'Zen Kaku Gothic New',sa
 /* ── ROUTE MAP ── */
 #route{padding:80px 24px;}
 .section-wrap{max-width:1100px;margin:0 auto;}
-.section-label{font-size:10px;letter-spacing:0.5em;text-transform:uppercase;color:var(--text3);margin-bottom:6px;}
-.section-title{font-family:'Noto Serif TC',serif;font-size:clamp(22px,3vw,32px);font-weight:600;color:var(--text);margin-bottom:48px;}
+.section-label{font-size:12px;letter-spacing:0.5em;text-transform:uppercase;color:var(--text3);margin-bottom:6px;}
+.section-title{font-family:'Noto Serif TC',serif;font-size:clamp(26px,3.5vw,38px);font-weight:600;color:var(--text);margin-bottom:48px;}
 .route-track{display:flex;align-items:flex-start;gap:0;overflow-x:auto;padding-bottom:16px;scrollbar-width:thin;scrollbar-color:var(--border) transparent;}
 .route-node{display:flex;flex-direction:column;align-items:center;flex-shrink:0;}
 .route-node-inner{display:flex;align-items:center;}
 .route-dot-wrap{display:flex;flex-direction:column;align-items:center;gap:8px;}
-.route-dot{width:44px;height:44px;border-radius:50%;border:1.5px solid;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.route-dot{width:44px;height:44px;border-radius:50%;border:1.5px solid;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
 .route-dot.pine{border-color:var(--pine);background:rgba(74,122,90,0.08);}
 .route-dot.onsen{border-color:var(--onsen);background:rgba(160,88,64,0.08);}
 .route-dot.gold{border-color:var(--gold);background:rgba(138,106,48,0.08);}
 .route-dot.city{border-color:var(--city);background:rgba(58,88,112,0.08);}
 .route-dot.red{border-color:var(--red);background:rgba(160,40,40,0.08);}
 .route-info{text-align:center;margin-top:12px;max-width:100px;}
-.route-days{font-size:9px;letter-spacing:0.3em;color:var(--text3);margin-bottom:3px;}
-.route-place{font-family:'Noto Serif TC',serif;font-size:13px;font-weight:600;color:var(--text);}
+.route-days{font-size:11px;letter-spacing:0.3em;color:var(--text3);margin-bottom:3px;}
+.route-place{font-family:'Noto Serif TC',serif;font-size:15px;font-weight:600;color:var(--text);}
 .route-line{width:60px;height:1px;background:var(--border2);flex-shrink:0;margin-top:-22px;position:relative;}
-.route-line::after{content:'▶';position:absolute;right:-6px;top:-7px;font-size:9px;color:var(--text3);}
+.route-line::after{content:'▶';position:absolute;right:-6px;top:-7px;font-size:11px;color:var(--text3);}
 
 /* ── DAY SECTIONS ── */
 .day-section{padding:80px 24px;border-top:1px solid var(--border);}
@@ -89,25 +89,25 @@ body{background:var(--bg);color:var(--text);font-family:'Zen Kaku Gothic New',sa
 .day-num-big{font-family:'Cormorant Garamond',serif;font-size:clamp(72px,10vw,120px);font-weight:300;line-height:0.9;color:rgba(0,0,0,0.04);flex-shrink:0;user-select:none;}
 .day-header-text{padding-top:12px;}
 .day-date-tag{display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;}
-.day-date-pill{font-size:10px;letter-spacing:0.3em;padding:4px 12px;border-radius:20px;text-transform:uppercase;}
+.day-date-pill{font-size:12px;letter-spacing:0.3em;padding:4px 12px;border-radius:20px;text-transform:uppercase;}
 .pine-pill{background:rgba(74,122,90,0.1);color:var(--pine-light);border:1px solid rgba(74,122,90,0.25);}
 .onsen-pill{background:rgba(160,88,64,0.1);color:var(--onsen-light);border:1px solid rgba(160,88,64,0.25);}
 .gold-pill{background:rgba(138,106,48,0.1);color:var(--gold-light);border:1px solid rgba(138,106,48,0.25);}
 .city-pill{background:rgba(58,88,112,0.1);color:var(--city);border:1px solid rgba(58,88,112,0.25);}
-.day-title{font-family:'Noto Serif TC',serif;font-size:clamp(20px,3vw,28px);font-weight:600;color:var(--text);line-height:1.35;}
-.day-subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--text2);margin-top:4px;}
+.day-title{font-family:'Noto Serif TC',serif;font-size:clamp(24px,3.5vw,34px);font-weight:600;color:var(--text);line-height:1.35;}
+.day-subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:var(--text2);margin-top:4px;}
 
 /* transport bar */
 .transport-bar{display:flex;align-items:center;gap:14px;padding:12px 18px;background:var(--card);border-left:3px solid var(--gold);margin-bottom:40px;flex-wrap:wrap;box-shadow:var(--shadow);}
-.transport-icon{font-size:18px;flex-shrink:0;}
-.transport-text{font-size:13px;color:var(--text2);}
+.transport-icon{font-size:22px;flex-shrink:0;}
+.transport-text{font-size:15px;color:var(--text2);}
 .transport-text strong{color:var(--text);}
 
 /* timeline */
 .timeline{position:relative;display:flex;flex-direction:column;gap:0;}
 .timeline::before{content:'';position:absolute;left:56px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--border2),transparent 95%);}
 .tl-row{display:grid;grid-template-columns:56px 1px 1fr;gap:0 20px;}
-.tl-time{font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--text3);text-align:right;padding-top:3px;letter-spacing:0.04em;}
+.tl-time{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--text3);text-align:right;padding-top:3px;letter-spacing:0.04em;}
 .tl-axis{display:flex;flex-direction:column;align-items:center;padding-top:8px;}
 .tl-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;border:1.5px solid;}
 .tl-dot.pine{border-color:var(--pine);background:var(--bg);}
@@ -116,10 +116,10 @@ body{background:var(--bg);color:var(--text);font-family:'Zen Kaku Gothic New',sa
 .tl-dot.city{border-color:var(--city);background:var(--bg);}
 .tl-line{width:1px;flex:1;min-height:16px;background:var(--border);}
 .tl-body{padding:0 0 40px;}
-.tl-title{font-family:'Noto Serif TC',serif;font-size:16px;font-weight:600;color:var(--text);line-height:1.4;margin-bottom:6px;}
-.tl-desc{font-size:13px;line-height:1.85;color:var(--text2);margin-bottom:10px;}
+.tl-title{font-family:'Noto Serif TC',serif;font-size:18px;font-weight:600;color:var(--text);line-height:1.4;margin-bottom:6px;}
+.tl-desc{font-size:15px;line-height:1.85;color:var(--text2);margin-bottom:10px;}
 .tl-tags{display:flex;flex-wrap:wrap;gap:6px;}
-.tl-tag{font-size:9px;letter-spacing:0.25em;padding:3px 9px;border:1px solid var(--border2);color:var(--text3);border-radius:2px;text-transform:uppercase;}
+.tl-tag{font-size:11px;letter-spacing:0.25em;padding:3px 9px;border:1px solid var(--border2);color:var(--text3);border-radius:2px;text-transform:uppercase;}
 
 /* spot cards */
 .spot-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin:40px 0;}
@@ -132,41 +132,41 @@ body{background:var(--bg);color:var(--text);font-family:'Zen Kaku Gothic New',sa
 .spot-img-badge{}
 
 .spot-body{padding:20px;}
-.spot-name{font-family:'Noto Serif TC',serif;font-size:16px;font-weight:600;color:var(--text);margin-bottom:6px;}
-.spot-desc{font-size:12.5px;line-height:1.8;color:var(--text2);margin-bottom:14px;}
+.spot-name{font-family:'Noto Serif TC',serif;font-size:18px;font-weight:600;color:var(--text);margin-bottom:6px;}
+.spot-desc{font-size:15px;line-height:1.8;color:var(--text2);margin-bottom:14px;}
 .spot-highlights{list-style:none;margin-bottom:14px;}
-.spot-highlights li{font-size:12px;color:var(--text2);padding:4px 0;border-bottom:1px solid var(--border);display:flex;align-items:baseline;gap:8px;line-height:1.5;}
+.spot-highlights li{font-size:14px;color:var(--text2);padding:4px 0;border-bottom:1px solid var(--border);display:flex;align-items:baseline;gap:8px;line-height:1.5;}
 .spot-highlights li:last-child{border-bottom:none;}
 .spot-footer{display:flex;justify-content:space-between;align-items:center;margin-top:12px;padding-top:12px;border-top:1px solid var(--border);}
-.spot-duration{font-size:11px;color:var(--text3);display:flex;align-items:center;gap:5px;}
-.spot-tip{font-size:11px;color:var(--gold);font-style:italic;}
+.spot-duration{font-size:13px;color:var(--text3);display:flex;align-items:center;gap:5px;}
+.spot-tip{font-size:13px;color:var(--gold);font-style:italic;}
 
 /* ── ACCOMMODATION ── */
 #accommodation{padding:80px 24px;border-top:1px solid var(--border);}
 .hotel-city{margin-bottom:56px;}
-.hotel-city-title{font-family:'Noto Serif TC',serif;font-size:20px;font-weight:600;color:var(--text);margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;}
+.hotel-city-title{font-family:'Noto Serif TC',serif;font-size:22px;font-weight:600;color:var(--text);margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;}
 .hotel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;}
 .hotel-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:transform 0.3s,box-shadow 0.3s,border-color 0.3s;position:relative;box-shadow:var(--shadow);}
 .hotel-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);border-color:var(--border2);}
 .hotel-card.recommended{border-color:rgba(138,106,48,0.35);}
-.hotel-badge-rec{position:absolute;top:14px;right:14px;background:var(--gold);color:#fff;font-size:9px;letter-spacing:0.3em;padding:4px 10px;border-radius:2px;text-transform:uppercase;font-weight:700;z-index:2;}
+.hotel-badge-rec{position:absolute;top:14px;right:14px;background:var(--gold);color:#fff;font-size:11px;letter-spacing:0.3em;padding:4px 10px;border-radius:2px;text-transform:uppercase;font-weight:700;z-index:2;}
 .hotel-img{display:none;}
 .hotel-img img{display:none;}
 .hotel-card:hover .hotel-img img{}
 .hotel-body{padding:18px 20px 20px;}
-.hotel-name{font-family:'Noto Serif TC',serif;font-size:15px;font-weight:600;color:var(--text);margin-bottom:4px;}
-.hotel-sub{font-size:12px;color:var(--text2);margin-bottom:12px;font-style:italic;font-family:'Cormorant Garamond',serif;}
+.hotel-name{font-family:'Noto Serif TC',serif;font-size:17px;font-weight:600;color:var(--text);margin-bottom:4px;}
+.hotel-sub{font-size:14px;color:var(--text2);margin-bottom:12px;font-style:italic;font-family:'Cormorant Garamond',serif;}
 .hotel-rating{display:flex;align-items:center;gap:6px;margin-bottom:12px;}
-.hotel-stars{color:#c8963e;font-size:13px;letter-spacing:2px;}
-.hotel-rating-num{font-size:12px;color:var(--text2);}
+.hotel-stars{color:#c8963e;font-size:15px;letter-spacing:2px;}
+.hotel-rating-num{font-size:14px;color:var(--text2);}
 .hotel-amenities{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;}
-.hotel-amenity{font-size:11px;color:var(--text2);background:var(--card2);padding:3px 8px;border-radius:2px;display:flex;align-items:center;gap:4px;border:1px solid var(--border);}
+.hotel-amenity{font-size:13px;color:var(--text2);background:var(--card2);padding:3px 8px;border-radius:2px;display:flex;align-items:center;gap:4px;border:1px solid var(--border);}
 .hotel-footer{display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid var(--border);}
 .hotel-price{display:flex;flex-direction:column;}
-.hotel-price-label{font-size:9px;letter-spacing:0.3em;color:var(--text3);text-transform:uppercase;}
-.hotel-price-num{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--text);}
-.hotel-price-sub{font-size:10px;color:var(--text3);}
-.hotel-book-btn{padding:8px 16px;background:var(--text);color:#fff;font-size:11px;letter-spacing:0.2em;border:none;border-radius:var(--radius);cursor:pointer;font-family:'Zen Kaku Gothic New',sans-serif;text-decoration:none;transition:background 0.2s,transform 0.15s;}
+.hotel-price-label{font-size:11px;letter-spacing:0.3em;color:var(--text3);text-transform:uppercase;}
+.hotel-price-num{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--text);}
+.hotel-price-sub{font-size:12px;color:var(--text3);}
+.hotel-book-btn{padding:8px 16px;background:var(--text);color:#fff;font-size:13px;letter-spacing:0.2em;border:none;border-radius:var(--radius);cursor:pointer;font-family:'Zen Kaku Gothic New',sans-serif;text-decoration:none;transition:background 0.2s,transform 0.15s;}
 .hotel-book-btn:hover{background:var(--gold);transform:scale(1.03);}
 
 
@@ -175,15 +175,15 @@ body{background:var(--bg);color:var(--text);font-family:'Zen Kaku Gothic New',sa
 .tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:40px;}
 .tip-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;transition:border-color 0.2s,transform 0.2s,box-shadow 0.2s;box-shadow:var(--shadow);}
 .tip-card:hover{border-color:var(--border2);transform:translateY(-2px);box-shadow:var(--shadow-hover);}
-.tip-icon{font-size:28px;margin-bottom:12px;display:block;}
-.tip-title{font-family:'Noto Serif TC',serif;font-size:15px;font-weight:600;color:var(--text);margin-bottom:8px;}
-.tip-text{font-size:13px;line-height:1.85;color:var(--text2);}
+.tip-icon{font-size:34px;margin-bottom:12px;display:block;}
+.tip-title{font-family:'Noto Serif TC',serif;font-size:17px;font-weight:600;color:var(--text);margin-bottom:8px;}
+.tip-text{font-size:15px;line-height:1.85;color:var(--text2);}
 
 /* ── FOOTER ── */
 footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;background:var(--surface);}
 .footer-inner{max-width:1100px;margin:0 auto;}
-.footer-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:24px;color:var(--text2);margin-bottom:12px;}
-.footer-sub{font-size:11px;letter-spacing:0.3em;color:var(--text3);}
+.footer-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:28px;color:var(--text2);margin-bottom:12px;}
+.footer-sub{font-size:13px;letter-spacing:0.3em;color:var(--text3);}
 .footer-line{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:20px auto;}
 
 /* ── ANIMATIONS ── */
@@ -195,7 +195,7 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
 
 /* ── RESPONSIVE ── */
 @media(max-width:768px){
-  .nav-logo{font-size:14px;}
+  .nav-logo{font-size:16px;}
   .day-header{grid-template-columns:1fr;}
   .day-num-big{display:none;}
   .timeline::before{left:44px;}
@@ -616,26 +616,26 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
       border-radius:0 0 4px 4px;
       margin-bottom:0;
     ">
-      <div style="font-size:9px;letter-spacing:0.4em;color:#9a9490;text-transform:uppercase;width:100%;margin-bottom:4px;">圖例 Legend</div>
+      <div style="font-size:11px;letter-spacing:0.4em;color:#9a9490;text-transform:uppercase;width:100%;margin-bottom:4px;">圖例 Legend</div>
       <div style="display:flex;align-items:center;gap:8px;">
         <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#e8803a;flex-shrink:0;"></span>
-        <span style="font-size:12px;color:#6a6460;">Day 2–4 · 輕井澤・草津溫泉</span>
+        <span style="font-size:14px;color:#6a6460;">Day 2–4 · 輕井澤・草津溫泉</span>
       </div>
       <div style="display:flex;align-items:center;gap:8px;">
         <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#4a90d9;flex-shrink:0;"></span>
-        <span style="font-size:12px;color:#6a6460;">Day 5 · 豪德寺・吉祥寺</span>
+        <span style="font-size:14px;color:#6a6460;">Day 5 · 豪德寺・吉祥寺</span>
       </div>
       <div style="display:flex;align-items:center;gap:8px;">
         <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#48a868;flex-shrink:0;"></span>
-        <span style="font-size:12px;color:#6a6460;">Day 6 · 鎌倉・江之島</span>
+        <span style="font-size:14px;color:#6a6460;">Day 6 · 鎌倉・江之島</span>
       </div>
       <div style="display:flex;align-items:center;gap:8px;">
         <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#d4a830;flex-shrink:0;"></span>
-        <span style="font-size:12px;color:#6a6460;">Day 7–8 · 東京市區・成田</span>
+        <span style="font-size:14px;color:#6a6460;">Day 7–8 · 東京市區・成田</span>
       </div>
       <div style="display:flex;align-items:center;gap:8px;">
         <span style="display:inline-block;width:28px;height:2px;background:#e8803a;border-top:2px dashed #e8803a;flex-shrink:0;"></span>
-        <span style="font-size:12px;color:#6a6460;">移動路線</span>
+        <span style="font-size:14px;color:#6a6460;">移動路線</span>
       </div>
     </div>
   </div>
@@ -705,9 +705,9 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
           padding:4px 2px;
           line-height:1.6;
         ">
-          <div style="font-size:18px;margin-bottom:4px;">${stop.emoji}</div>
-          <div style="font-size:14px;font-weight:600;color:#1a1410;margin-bottom:2px;">${stop.label}</div>
-          <div style="font-size:11px;color:#7a7670;letter-spacing:0.1em;">${stop.day}</div>
+          <div style="font-size:22px;margin-bottom:4px;">${stop.emoji}</div>
+          <div style="font-size:16px;font-weight:600;color:#1a1410;margin-bottom:2px;">${stop.label}</div>
+          <div style="font-size:13px;color:#7a7670;letter-spacing:0.1em;">${stop.day}</div>
         </div>
       `, {
         maxWidth: 200,
@@ -790,13 +790,13 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
     <!-- Stay card -->
     <div style="margin-top:32px;padding:20px 24px;background:white;border-left:2px solid var(--city);display:flex;justify-content:space-between;align-items:center;gap:16px;box-shadow:var(--shadow);flex-wrap:wrap;">
       <div>
-        <div style="font-size:9px;letter-spacing:0.35em;color:var(--text3);text-transform:uppercase;margin-bottom:5px;">Tonight's Stay</div>
-        <div style="font-family:'Noto Serif TC',serif;font-size:15px;font-weight:600;color:var(--text);">🏠 飛飛家・茅場町</div>
-        <div style="font-size:12px;color:var(--text2);margin-top:3px;">中央線 / 日比谷線 交會・鄰近銀座、築地</div>
+        <div style="font-size:11px;letter-spacing:0.35em;color:var(--text3);text-transform:uppercase;margin-bottom:5px;">Tonight's Stay</div>
+        <div style="font-family:'Noto Serif TC',serif;font-size:17px;font-weight:600;color:var(--text);">🏠 飛飛家・茅場町</div>
+        <div style="font-size:14px;color:var(--text2);margin-top:3px;">中央線 / 日比谷線 交會・鄰近銀座、築地</div>
       </div>
       <div style="text-align:right;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--pine);">免費</div>
-        <div style="font-size:11px;color:var(--text3);">Day 1, 4, 5, 6 共 4 晚</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--pine);">免費</div>
+        <div style="font-size:13px;color:var(--text3);">Day 1, 4, 5, 6 共 4 晚</div>
       </div>
     </div>
   </div>
@@ -1220,13 +1220,13 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
 }
 .stay-date-day {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 300;
   color: var(--text3);
   line-height: 1;
 }
 .stay-date-label {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--text3);
@@ -1252,7 +1252,7 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
 
 .stay-name {
   font-family: 'Noto Serif TC', serif;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 600;
   color: var(--text);
   margin-bottom: 4px;
@@ -1261,7 +1261,7 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
 .stay-location {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text2);
   margin-bottom: 12px;
 }
@@ -1272,7 +1272,7 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
   margin-bottom: 12px;
 }
 .stay-detail-chip {
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.15em;
   color: var(--text2);
   padding: 3px 10px;
@@ -1288,31 +1288,31 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
   border-top: 1px solid var(--border);
 }
 .stay-price-tag {
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--text3);
 }
 .stay-price-amt {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
+  font-size: 26px;
   color: var(--text);
 }
 .stay-price-note {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--text3);
   margin-left: auto;
   font-style: italic;
 }
 .stay-free {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
+  font-size: 26px;
   color: var(--pine);
 }
 
 @media (max-width: 480px) {
   .stay-record { grid-template-columns: 56px 1fr; }
-  .stay-date-day { font-size: 20px; }
+  .stay-date-day { font-size: 24px; }
   .stay-content-col { padding-left: 16px; }
 }
 </style>
@@ -1329,12 +1329,12 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
         <div class="stay-date-col">
           <div class="stay-date-day">1</div>
           <div class="stay-date-label">6/26</div>
-          <div style="margin-top:4px;font-size:9px;color:var(--text3);letter-spacing:0.1em;">+4, 5, 6</div>
+          <div style="margin-top:4px;font-size:11px;color:var(--text3);letter-spacing:0.1em;">+4, 5, 6</div>
         </div>
         <div class="stay-content-col">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
             <div style="width:8px;height:8px;border-radius:50%;background:var(--city);flex-shrink:0;"></div>
-            <div style="font-size:9px;letter-spacing:0.35em;color:var(--city);text-transform:uppercase;">Day 1 · 4 · 5 · 6</div>
+            <div style="font-size:11px;letter-spacing:0.35em;color:var(--city);text-transform:uppercase;">Day 1 · 4 · 5 · 6</div>
           </div>
           <div class="stay-name">飛飛家</div>
           <div class="stay-location">茅場町，東京 · Kayabachō, Chūō-ku</div>
@@ -1360,7 +1360,7 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
         <div class="stay-content-col">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
             <div style="width:8px;height:8px;border-radius:50%;background:var(--pine);flex-shrink:0;"></div>
-            <div style="font-size:9px;letter-spacing:0.35em;color:var(--pine);text-transform:uppercase;">Day 2 · 輕井澤</div>
+            <div style="font-size:11px;letter-spacing:0.35em;color:var(--pine);text-transform:uppercase;">Day 2 · 輕井澤</div>
           </div>
           <div class="stay-name">Hotel Karuizawa Cross</div>
           <div class="stay-location">輕井澤，長野縣 · Karuizawa, Nagano</div>
@@ -1387,7 +1387,7 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
         <div class="stay-content-col">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
             <div style="width:8px;height:8px;border-radius:50%;background:var(--onsen);flex-shrink:0;"></div>
-            <div style="font-size:9px;letter-spacing:0.35em;color:var(--onsen);text-transform:uppercase;">Day 3 · 草津溫泉</div>
+            <div style="font-size:11px;letter-spacing:0.35em;color:var(--onsen);text-transform:uppercase;">Day 3 · 草津溫泉</div>
           </div>
           <div class="stay-name">草津酒店 1913</div>
           <div class="stay-location">草津溫泉，群馬縣 · Kusatsu Onsen, Gunma</div>
@@ -1414,7 +1414,7 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
         <div class="stay-content-col">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
             <div style="width:8px;height:8px;border-radius:50%;background:var(--city);flex-shrink:0;"></div>
-            <div style="font-size:9px;letter-spacing:0.35em;color:var(--city);text-transform:uppercase;">Day 7 · 東京</div>
+            <div style="font-size:11px;letter-spacing:0.35em;color:var(--city);text-transform:uppercase;">Day 7 · 東京</div>
           </div>
           <div class="stay-name">東橫 INN 藏前</div>
           <div class="stay-location">藏前，台東區 · Kuramae, Taitō-ku</div>
@@ -1446,16 +1446,16 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
     <!-- 航班 -->
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:40px;">
       <div style="background:var(--card);border:1px solid var(--border);padding:20px 24px;border-left:3px solid var(--pine);box-shadow:var(--shadow);">
-        <div style="font-size:9px;letter-spacing:0.4em;color:var(--text3);text-transform:uppercase;margin-bottom:8px;">去程 Outbound</div>
-        <div style="font-family:'Noto Serif TC',serif;font-size:16px;font-weight:600;color:var(--text);margin-bottom:4px;">✈️ CI 108</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--pine);">14:35 → 19:00</div>
-        <div style="font-size:11px;color:var(--text2);margin-top:4px;">6月26日（五）· 台北桃園 → 東京成田</div>
+        <div style="font-size:11px;letter-spacing:0.4em;color:var(--text3);text-transform:uppercase;margin-bottom:8px;">去程 Outbound</div>
+        <div style="font-family:'Noto Serif TC',serif;font-size:18px;font-weight:600;color:var(--text);margin-bottom:4px;">✈️ CI 108</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--pine);">14:35 → 19:00</div>
+        <div style="font-size:13px;color:var(--text2);margin-top:4px;">6月26日（五）· 台北桃園 → 東京成田</div>
       </div>
       <div style="background:var(--card);border:1px solid var(--border);padding:20px 24px;border-left:3px solid var(--onsen);box-shadow:var(--shadow);">
-        <div style="font-size:9px;letter-spacing:0.4em;color:var(--text3);text-transform:uppercase;margin-bottom:8px;">回程 Return</div>
-        <div style="font-family:'Noto Serif TC',serif;font-size:16px;font-weight:600;color:var(--text);margin-bottom:4px;">✈️ CI 101</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--onsen);">14:30 → 17:15</div>
-        <div style="font-size:11px;color:var(--text2);margin-top:4px;">7月3日（五）· 東京成田 → 台北桃園</div>
+        <div style="font-size:11px;letter-spacing:0.4em;color:var(--text3);text-transform:uppercase;margin-bottom:8px;">回程 Return</div>
+        <div style="font-family:'Noto Serif TC',serif;font-size:18px;font-weight:600;color:var(--text);margin-bottom:4px;">✈️ CI 101</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--onsen);">14:30 → 17:15</div>
+        <div style="font-size:13px;color:var(--text2);margin-top:4px;">7月3日（五）· 東京成田 → 台北桃園</div>
       </div>
     </div>
 
@@ -1464,69 +1464,69 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
 
       <!-- 雙人共同支出 -->
       <div style="padding:10px 20px 6px;background:rgba(74,122,90,0.08);border-bottom:1px solid var(--border);">
-        <span style="font-size:9px;letter-spacing:0.4em;color:var(--pine);text-transform:uppercase;font-weight:600;">👫 雙人共同支出</span>
+        <span style="font-size:11px;letter-spacing:0.4em;color:var(--pine);text-transform:uppercase;font-weight:600;">👫 雙人共同支出</span>
       </div>
       <div style="min-width:520px;">
         <div style="display:grid;grid-template-columns:1fr 2fr 2fr 110px;padding:13px 20px;gap:12px;border-bottom:1px solid var(--border);align-items:center;">
-          <div style="font-size:12px;color:var(--text2);">雙人住宿</div>
-          <div style="font-size:13px;color:var(--text);font-family:'Noto Serif TC',serif;">輕井澤 + 草津溫泉</div>
-          <div style="font-size:12px;color:var(--text2);">¥26,493 + ¥35,817</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--text);text-align:right;">¥62,310</div>
+          <div style="font-size:14px;color:var(--text2);">雙人住宿</div>
+          <div style="font-size:15px;color:var(--text);font-family:'Noto Serif TC',serif;">輕井澤 + 草津溫泉</div>
+          <div style="font-size:14px;color:var(--text2);">¥26,493 + ¥35,817</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--text);text-align:right;">¥62,310</div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 2fr 2fr 110px;padding:13px 20px;gap:12px;border-bottom:1px solid var(--border);align-items:center;background:var(--surface);">
-          <div style="font-size:12px;color:var(--text2);">長途交通</div>
-          <div style="font-size:13px;color:var(--text);font-family:'Noto Serif TC',serif;">新幹線 + 草輕巴士</div>
-          <div style="font-size:12px;color:var(--text2);">新幹線往返 ¥11,820 + 巴士往返 ¥4,480</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--text);text-align:right;">¥16,300</div>
+          <div style="font-size:14px;color:var(--text2);">長途交通</div>
+          <div style="font-size:15px;color:var(--text);font-family:'Noto Serif TC',serif;">新幹線 + 草輕巴士</div>
+          <div style="font-size:14px;color:var(--text2);">新幹線往返 ¥11,820 + 巴士往返 ¥4,480</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--text);text-align:right;">¥16,300</div>
         </div>
         <!-- 雙人小計 -->
         <div style="display:grid;grid-template-columns:1fr 110px;padding:11px 20px;gap:12px;background:rgba(74,122,90,0.06);border-bottom:2px solid var(--border);">
-          <div style="font-size:11px;color:var(--pine);letter-spacing:0.15em;">雙人合計</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--pine);text-align:right;font-weight:400;">¥78,610</div>
+          <div style="font-size:13px;color:var(--pine);letter-spacing:0.15em;">雙人合計</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--pine);text-align:right;font-weight:400;">¥78,610</div>
         </div>
       </div>
 
       <!-- 個人獨立支出 -->
       <div style="padding:10px 20px 6px;background:rgba(58,88,112,0.08);border-bottom:1px solid var(--border);">
-        <span style="font-size:9px;letter-spacing:0.4em;color:var(--city);text-transform:uppercase;font-weight:600;">👤 個人獨立支出</span>
+        <span style="font-size:11px;letter-spacing:0.4em;color:var(--city);text-transform:uppercase;font-weight:600;">👤 個人獨立支出</span>
       </div>
       <div style="min-width:520px;">
         <div style="display:grid;grid-template-columns:1fr 2fr 2fr 110px;padding:13px 20px;gap:12px;border-bottom:1px solid var(--border);align-items:center;">
-          <div style="font-size:12px;color:var(--text2);">個人住宿</div>
-          <div style="font-size:13px;color:var(--text);font-family:'Noto Serif TC',serif;">東橫 INN 藏前</div>
-          <div style="font-size:12px;color:var(--text2);">Day 7 · 單人房</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--text);text-align:right;">¥8,335</div>
+          <div style="font-size:14px;color:var(--text2);">個人住宿</div>
+          <div style="font-size:15px;color:var(--text);font-family:'Noto Serif TC',serif;">東橫 INN 藏前</div>
+          <div style="font-size:14px;color:var(--text2);">Day 7 · 單人房</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--text);text-align:right;">¥8,335</div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 2fr 2fr 110px;padding:13px 20px;gap:12px;border-bottom:1px solid var(--border);align-items:center;background:var(--surface);">
-          <div style="font-size:12px;color:var(--text2);">市區 / 接駁</div>
-          <div style="font-size:13px;color:var(--text);font-family:'Noto Serif TC',serif;">Skyliner + 地鐵 + 鎌倉</div>
-          <div style="font-size:12px;color:var(--text2);">Skyliner ¥5,140 + 地鐵72H ¥1,500 + 鎌倉/單車</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--text);text-align:right;">¥10,000</div>
+          <div style="font-size:14px;color:var(--text2);">市區 / 接駁</div>
+          <div style="font-size:15px;color:var(--text);font-family:'Noto Serif TC',serif;">Skyliner + 地鐵 + 鎌倉</div>
+          <div style="font-size:14px;color:var(--text2);">Skyliner ¥5,140 + 地鐵72H ¥1,500 + 鎌倉/單車</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--text);text-align:right;">¥10,000</div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 2fr 2fr 110px;padding:13px 20px;gap:12px;border-bottom:1px solid var(--border);align-items:center;">
-          <div style="font-size:12px;color:var(--text2);">生活餐雜</div>
-          <div style="font-size:13px;color:var(--text);font-family:'Noto Serif TC',serif;">餐飲 · 景點 · 雜支</div>
-          <div style="font-size:12px;color:var(--text2);">8天（不含飯店附餐）預估</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--text);text-align:right;">¥50,000</div>
+          <div style="font-size:14px;color:var(--text2);">生活餐雜</div>
+          <div style="font-size:15px;color:var(--text);font-family:'Noto Serif TC',serif;">餐飲 · 景點 · 雜支</div>
+          <div style="font-size:14px;color:var(--text2);">8天（不含飯店附餐）預估</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--text);text-align:right;">¥50,000</div>
         </div>
         <!-- 個人小計 -->
         <div style="display:grid;grid-template-columns:1fr 110px;padding:11px 20px;gap:12px;background:rgba(58,88,112,0.06);border-bottom:2px solid var(--border);">
-          <div style="font-size:11px;color:var(--city);letter-spacing:0.15em;">個人合計</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--city);text-align:right;">¥68,335</div>
+          <div style="font-size:13px;color:var(--city);letter-spacing:0.15em;">個人合計</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--city);text-align:right;">¥68,335</div>
         </div>
       </div>
 
       <!-- 總計 -->
       <div style="display:grid;grid-template-columns:1fr auto;padding:20px 24px;gap:12px;align-items:center;background:var(--text);">
         <div>
-          <div style="font-family:'Noto Serif TC',serif;font-size:13px;font-weight:600;color:rgba(247,244,239,0.9);letter-spacing:0.1em;">TOTAL 預算總計</div>
-          <div style="font-size:10px;color:rgba(247,244,239,0.4);margin-top:3px;letter-spacing:0.1em;">航班費用未列入 · 生活餐雜為預估值</div>
+          <div style="font-family:'Noto Serif TC',serif;font-size:15px;font-weight:600;color:rgba(247,244,239,0.9);letter-spacing:0.1em;">TOTAL 預算總計</div>
+          <div style="font-size:12px;color:rgba(247,244,239,0.4);margin-top:3px;letter-spacing:0.1em;">航班費用未列入 · 生活餐雜為預估值</div>
         </div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:34px;color:#c8963e;text-align:right;">¥146,945</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:40px;color:#c8963e;text-align:right;">¥146,945</div>
       </div>
     </div>
 
-    <div style="margin-top:14px;font-size:11px;color:var(--text3);line-height:2;">
+    <div style="margin-top:14px;font-size:13px;color:var(--text3);line-height:2;">
       ＊ 雙人共同支出以兩人均攤計算，每人各付一半。<br>
       ＊ 個人獨立支出為個人自付，不含入雙人均攤。<br>
       ＊ 茅場町飛飛家（Day 1, 4, 5, 6）為免費住宿，未列入預算。
