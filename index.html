@@ -1114,23 +1114,40 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
     .plan-text{font-size:14px;line-height:1.9;color:var(--text2);}
     .plan-text strong{color:var(--text);}
     .plan-note{margin-top:10px;padding:7px 11px;background:rgba(200,40,45,0.05);border-left:2px solid #c8282d;font-size:13px;color:var(--text2);line-height:1.7;}
+    .plan-list{list-style:none;margin:0;padding:0;counter-reset:step;}
+    .plan-list li{font-size:14px;line-height:1.7;color:var(--text2);padding:7px 0 7px 26px;border-bottom:1px solid var(--border);position:relative;}
+    .plan-list li:last-child{border-bottom:none;padding-bottom:0;}
+    .plan-list li::before{content:counter(step);counter-increment:step;position:absolute;left:0;top:8px;font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--text3);line-height:1;}
+    .plan-list li strong{color:var(--text);}
     @media(max-width:640px){.plan-cols{grid-template-columns:1fr;}.plan-col:first-child{border-right:none;border-bottom:1px solid var(--border);}}
     </style>
 
     <!-- Day 5 · 6/30 -->
     <div class="plan-block">
       <div class="plan-block-header">
-        <div class="plan-block-date">Day 5 · 6/30（二）· 飛飛加班流浪日</div>
-        <div class="plan-block-title">吉祥寺經典肉食抹茶 vs. 原宿澀谷法式新潮</div>
+        <div class="plan-block-date">Day 5 · 6/30（二）· 飛飛加班流浪日（地鐵 72H 券啟用）</div>
+        <div class="plan-block-title">吉祥寺・SHIBUYA SKY vs. 表參道・ami cafe・卡帶咖啡廳</div>
       </div>
       <div class="plan-cols">
         <div class="plan-col">
           <div class="plan-label-a">Plan A · 經典肉食抹茶流浪</div>
-          <div class="plan-text">早上先前往<strong>豪德寺</strong>還願、購買新的招財貓，接著到吉祥寺享用 Tabelog 高分燒肉的商業午餐（如<strong>薩摩牛藏</strong>或<strong>燒肉 Inoue</strong>）。下午在吉祥寺商店街逛文青雜貨，並到「<strong>CAPOON 抹茶製造所</strong>」享用石臼現磨的抹茶拿鐵與巴斯克蛋糕。傍晚可前往澀谷 <strong>SHIBUYA SKY</strong> 看夕陽夜景，晚上回到吉祥寺品嚐「<strong>山本漢堡排</strong>」或排隊名店「<strong>挽肉與米</strong>」。</div>
+          <ol class="plan-list">
+            <li><strong>豪德寺</strong>：早上先前往還願、購買新的招財貓。</li>
+            <li><strong>吉祥寺商午</strong>：中午享用 Tabelog 高分燒肉（薩摩牛藏或燒肉 Inoue）。</li>
+            <li><strong>商店街散策</strong>：下午在吉祥寺巷弄、中道通挖掘文青雜貨。</li>
+            <li><strong>CAPOON 抹茶製造所</strong>：午茶品嚐石臼現磨抹茶拿鐵與磚頭般酥脆的巴斯克。</li>
+            <li><strong>SHIBUYA SKY</strong>：16:30 上展望台看黃昏夕陽與東京高空夜景。</li>
+            <li><strong>吉祥寺晚餐</strong>：晚上回吉祥寺吃山本漢堡排，或排隊名店「挽肉與米」。</li>
+          </ol>
         </div>
         <div class="plan-col">
           <div class="plan-label-b">Plan B · 法式優雅與復古音樂</div>
-          <div class="plan-text">早上前往表參道朝聖來自法國的 <strong>ami cafe</strong>，在極具法式優雅的黑白地磚與高腳椅間，品嚐精緻的紅色字母 Logo 巧克力蛋糕與濃郁順口的熱拿鐵。接著前往全球唯一以「禁忌森林」為主題打造的<strong>哈利波特旗艦店</strong>，品嚐原宿店限定奶油啤酒冰淇淋。午餐至同棟 2 樓挑戰麵包名師新開的平價創意漢堡 <strong>Neil Nice Burger</strong>。下午前往澀谷<strong>復古卡帶咖啡廳</strong>，支付入場費後挑選 90 年代卡帶（松田聖子、尾崎豐），在卡帶機特有的微雜訊中聆聽懷舊音樂，享用裝在卡帶夾裡的超可愛打卡甜點。</div>
+          <ol class="plan-list">
+            <li><strong>表參道 ami cafe</strong>：早上朝聖黑白法式限定店，吃字母 Logo 蛋糕與熱拿鐵。</li>
+            <li><strong>哈利波特原宿旗艦店</strong>：逛全球唯一「禁忌森林」主題設計，吃原宿限定奶油啤酒冰淇淋。</li>
+            <li><strong>Neil Nice Burger</strong>：午餐挑戰知名麵包店創辦人開的平價創意漢堡（特製漢堡包與酥脆薯條）。</li>
+            <li><strong>澀谷卡帶咖啡廳</strong>：下午支付入場費、看 3 分鐘解說片，挑選 90 年代黑膠/卡帶聆聽，享用卡帶夾甜點。</li>
+          </ol>
           <div class="plan-note">✨ ami cafe 為 <strong>2026 年 10 月底前期間限定</strong>，內用限時 30 分鐘，強烈建議預約</div>
         </div>
       </div>
@@ -1139,17 +1156,30 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
     <!-- Day 6 · 7/01 -->
     <div class="plan-block">
       <div class="plan-block-header">
-        <div class="plan-block-date">Day 6 · 7/01（三）· 換飯店體力彈性日</div>
-        <div class="plan-block-title">湘南海岸看海 vs. 龜有下町＋藏前文青慢遊</div>
+        <div class="plan-block-date">Day 6 · 7/01（三）· 體力彈性日（一早先搬行李至東橫 INN 藏前寄放）</div>
+        <div class="plan-block-title">鎌倉・江之島海景 vs. 龜有烏龍派出所＋藏前文青慢遊</div>
       </div>
       <div class="plan-cols">
         <div class="plan-col">
           <div class="plan-label-a">Plan A · 鎌倉與江之島海景</div>
-          <div class="plan-text">搭乘<strong>江之電</strong>前往鐮倉，在車站附近品嚐熱銷百萬個的<strong>長頸鹿咖哩餅</strong>，以及附帶七道前菜的<strong>海膽蛋捲雙醬蛋包飯</strong>。接著前往「<strong>錢洗辨財天宇賀福神社</strong>」，將紙鈔或硬幣放在竹籃中洗滌祈求財運。傍晚前往<strong>江之島</strong>看夕陽，並品嚐用整隻章魚高壓製成的酥脆<strong>章魚仙貝</strong>。</div>
+          <ol class="plan-list">
+            <li><strong>鎌倉站</strong>：抵達後品嚐熱銷長頸鹿咖哩餅、海膽蛋捲雙醬蛋包飯。</li>
+            <li><strong>錢洗辨財天</strong>：搭江之電前往宇賀福神社，用竹籃洗滌鈔票硬幣祈求財運。</li>
+            <li><strong>江之島</strong>：傍晚在海邊看夕陽，品嚐現壓超大片酥脆章魚仙貝。</li>
+            <li><strong>東橫 INN 藏前</strong>：晚上回飯店 Check-in，獨享舒適的個人 Me Time。</li>
+          </ol>
         </div>
         <div class="plan-col">
           <div class="plan-label-b">Plan B · 龜有烏龍派出所＋藏前</div>
-          <div class="plan-text">早上衝刺龜有，朝聖最新開幕的 <strong>烏龍派出所紀念館</strong>！5 樓阿秋本老師的懷舊電子雞與模型車收藏 → 扭一顆 <strong>100 日圓漫畫運勢扭蛋</strong>、寫「兩津眉毛形狀」幽默繪馬；4 樓飽覽立體複製原畫手稿，尋找廁所前阿兩賽棍的彩蛋細節；3 樓挑戰<strong>「日文改名機器」</strong>、合成搞笑漫畫臉、木魚版太鼓達人敲到成佛，再去摸鏡面金庫引爆警報器。順道至隔壁<strong>香取神社</strong>購買「武士刀勝守」。<br><br>下午前往「東京布魯克林」藏前，到百年職人老店<strong>「市原野之」</strong>聞竹藤香氣挖手工野餐籃；朝聖 80 年老店 <strong>Pelican 麵包店</strong>（建議預約）盲吃樸實原味吐司；點心時間直奔藏前可麗露名店，2 樓粉色沙發區用湯匙敲擊<strong>「彷彿磚頭般酥脆」</strong>的經典可麗露，搭配結構式提拉米蘇。傍晚散步至隅田川畔，一次收進<strong>隅田川河畔、朝日啤酒金色便便與晴空塔無敵美景</strong>。</div>
+          <ol class="plan-list">
+            <li><strong>烏龍派出所紀念館</strong>：一早衝龜有，體驗日文改名機、100 日圓漫畫運勢扭蛋、木魚版太鼓達人、摸鏡面金庫引爆警報器。</li>
+            <li><strong>香取神社</strong>：順道拜勝利，購買氣勢爆棚的「武士刀勝守」或「劍腳御守」。</li>
+            <li><strong>藏前「市原野之」</strong>：下午挖寶，帶走質感極佳的手工藤編野餐籃或珠寶盒。</li>
+            <li><strong>Pelican 麵包店</strong>：盲吃 80 年歷史、外皮焦香內餡入口即化的樸實原味吐司。</li>
+            <li><strong>藏前可麗露沙發區</strong>：午茶敲擊「外皮如磚頭般酥脆、內餡極度濕潤」的蘭姆酒香可麗露。</li>
+            <li><strong>隅田川畔觀景台</strong>：傍晚一邊喝飲料，將河畔、金色便便與晴空塔夜景一次收進眼底。</li>
+            <li><strong>東橫 INN 藏前</strong>：直接步行回飯店 Check-in 滾床休息。</li>
+          </ol>
           <div class="plan-note">✨ 烏龍派出所紀念館 <strong>現場無售票，必須事先網路預約</strong></div>
         </div>
       </div>
@@ -1158,17 +1188,32 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
     <!-- Day 7 · 7/02 -->
     <div class="plan-block" style="margin-bottom:0;">
       <div class="plan-block-header">
-        <div class="plan-block-date">Day 7 · 7/02（四）· 搬家與最後採買</div>
+        <div class="plan-block-date">Day 7 · 7/02（四）· 精準採購日（不用搬家，藏前直接出發）</div>
         <div class="plan-block-title">銀座摩登血拼 vs. 神保町復古尋寶</div>
       </div>
       <div class="plan-cols">
         <div class="plan-col">
           <div class="plan-label-a">Plan A · 銀座新宿大採購</div>
-          <div class="plan-text">早上先將行李搬至<strong>東橫INN 淺草藏前2號店</strong>寄放。接著前往銀座旗艦店精準購買 <strong>Onitsuka Tiger</strong> 鞋款，並順道去百年麵包店「<strong>木村屋</strong>」購買北海道牛奶紅豆麵包或抹茶麻糬麵包。若預算充足，可前往東京歌劇城 53 樓的<strong>敘敘苑</strong>享用高空景觀商業午餐。<br><br>⚠️ <strong>傍晚務必先提著戰利品回飯店放好</strong>，晚上再輕裝與朋友在淺草或藏前河畔餐廳聚餐。</div>
+          <ol class="plan-list">
+            <li><strong>日本橋散策</strong>：早上逛 COREDO 室町，體驗大正風情日本橋老街（觀光客較少）。</li>
+            <li><strong>鬼塚虎銀座店</strong>：13:30 準時卡位旗艦店，精準試穿、購買 Onitsuka Tiger 鞋款並退稅。</li>
+            <li><strong>銀座木村屋</strong>：順道去百年老店購買北海道牛奶紅豆麵包或抹茶麻糬麵包。</li>
+            <li><strong>新宿敘敘苑</strong>：中午衝東京歌劇城 53 樓享用高空絕景商業午餐（預算充足限定）。</li>
+            <li><strong>銀座核心區</strong>：下午進攻 Ginza Six 蔦屋書店、UNIQLO 12 層旗艦店補貨。</li>
+            <li>⚠️ <strong>關鍵中繼（17:30）</strong>：必須提著大包小包戰利品先回東橫 INN 藏前放好，輕裝重整。</li>
+            <li>🌙 <strong>老友聚餐（18:30）</strong>：輕裝前往河畔餐廳，優雅欣賞晴空塔夜景。</li>
+          </ol>
         </div>
         <div class="plan-col">
           <div class="plan-label-b">Plan B · 神保町老派尋寶</div>
-          <div class="plan-text">早上同樣先將行李安頓於<strong>東橫INN 淺草藏前2號店</strong>。隨後前往充滿文藝氣息的<strong>神保町</strong>，找間復古喫茶店品嚐正宗「<strong>不攪拌的維也納咖啡</strong>」，並逛逛由傳統西服店轉型、販售高級西裝布料口金包及昭和感小物的特色小店。接著到隱密小神社購買極易秒殺的「<strong>強運</strong>」或「<strong>金運</strong>」言靈貼紙。午餐挑戰隱身在三角建築 4 樓、香料味十足且需搭乘<strong>手動復古電梯</strong>的道地印度咖哩，晚上再前往淺草與朋友會合聚餐。</div>
+          <ol class="plan-list">
+            <li><strong>復古喫茶店</strong>：早上在文藝神保町找間老店，品嚐正宗「不攪拌的維也納咖啡」。</li>
+            <li><strong>古著與小物尋寶</strong>：逛傳統西服店轉型特色小店，尋找高級西裝布料口金包與昭和雜貨。</li>
+            <li><strong>隱密小神社</strong>：購買極易秒殺的「強運」或「金運」言靈貼紙。</li>
+            <li><strong>三角建築印度咖哩</strong>：午餐搭乘手動復古電梯上 4 樓，挑戰香料味十足的道地咖哩。</li>
+            <li>⚠️ <strong>關鍵中繼（17:30）</strong>：回藏前東橫 INN 放好白天淘到的復古寶物，補個妝。</li>
+            <li>🌙 <strong>老友聚餐（18:30）</strong>：輕裝前往淺草或藏前河畔，與老友會合慶功聚餐。</li>
+          </ol>
         </div>
       </div>
     </div>
