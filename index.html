@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>東京・輕井澤・草津溫泉 8天7夜</title>
+<title>[tokyo]</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Zen+Kaku+Gothic+New:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
 /* ── RESET & TOKENS — MUJI LIGHT ── */
@@ -39,18 +39,17 @@ body{background:var(--bg);color:var(--text);font-family:'Zen Kaku Gothic New',sa
 .nav-logo{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:var(--gold);letter-spacing:0.05em;white-space:nowrap;}
 .nav-links{display:flex;gap:8px;align-items:center;overflow-x:auto;scrollbar-width:none;}
 .nav-links::-webkit-scrollbar{display:none;}
-.nav-days{display:flex;gap:4px;align-items:center;overflow-x:auto;}
-.nav-select-wrap{display:none;align-items:center;}
-.nav-select{padding:8px 12px;font-size:13px;border:1px solid var(--border2);border-radius:22px;background:rgba(255,255,255,0.95);color:var(--text);min-width:152px;outline:none;}
-.nav-select:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(138,106,48,0.12);}
+.nav-days{display:none;}
+.nav-select-wrap{display:flex;align-items:center;}
+.nav-select{padding:10px 18px;font-size:14px;border:1px solid rgba(138,106,48,0.24);border-radius:999px;background:linear-gradient(135deg, #ffffff, #fbf7f1);color:var(--text);min-width:170px;outline:none;box-shadow:0 12px 24px rgba(0,0,0,0.06);transition:transform 0.2s ease,box-shadow 0.2s ease;cursor:pointer;}
+.nav-select:hover{transform:translateY(-1px);box-shadow:0 14px 28px rgba(0,0,0,0.08);}
+.nav-select:focus{border-color:var(--gold);box-shadow:0 0 0 6px rgba(138,106,48,0.16);}
 .nav-link{padding:6px 14px;font-size:13px;letter-spacing:0.2em;color:var(--text2);text-decoration:none;border-radius:var(--radius);transition:color 0.2s,background 0.2s;white-space:nowrap;}
 .nav-link:hover{color:var(--text);background:rgba(0,0,0,0.04);}
 .nav-link.active{color:var(--gold);background:rgba(138,106,48,0.08);}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
 
 @media(max-width:768px){
-  .nav-days{display:none;}
-  .nav-select-wrap{display:flex;}
   .nav-select{min-width:120px;}
 }
 
@@ -230,26 +229,18 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
 <!-- ── NAV ── -->
 <nav id="nav">
   <div class="nav-inner">
-    <div class="nav-logo">Tokyo · Karuizawa · Kusatsu</div>
+    <div class="nav-logo">TOKYO</div>
     <div class="nav-links">
-      <div class="nav-days">
-        <a class="nav-link" href="#day1">Day 1</a>
-        <a class="nav-link" href="#day2">Day 2</a>
-        <a class="nav-link" href="#day3">Day 3</a>
-        <a class="nav-link" href="#day4">Day 4</a>
-        <a class="nav-link" href="#day57">Day 5–7</a>
-        <a class="nav-link" href="#day8">Day 8</a>
-      </div>
       <div class="nav-select-wrap">
         <label for="day-select" class="sr-only">選擇行程日</label>
         <select id="day-select" class="nav-select" onchange="if(this.value) location.hash = this.value;">
-          <option value="">選擇日期</option>
-          <option value="#day1">Day 1</option>
-          <option value="#day2">Day 2</option>
-          <option value="#day3">Day 3</option>
-          <option value="#day4">Day 4</option>
-          <option value="#day57">Day 5–7</option>
-          <option value="#day8">Day 8</option>
+          <option value="">☁️ 選擇行程日</option>
+          <option value="#day1">① Day 1</option>
+          <option value="#day2">② Day 2</option>
+          <option value="#day3">③ Day 3</option>
+          <option value="#day4">④ Day 4</option>
+          <option value="#day57">⑤ Day 5–7</option>
+          <option value="#day8">⑥ Day 8</option>
         </select>
       </div>
       <a class="nav-link" href="#route">路線</a>
@@ -1102,9 +1093,9 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
 
     <style>
     .plan-block{background:var(--card);border:1px solid var(--border);box-shadow:var(--shadow);margin-bottom:20px;}
-    .plan-block-header{padding:16px 24px;border-bottom:1px solid var(--border);background:rgba(58,88,112,0.04);display:flex;flex-direction:column;gap:6px;}
-    .plan-block-date{font-size:14px;letter-spacing:0.05em;color:#111111;text-transform:none;font-weight:800;margin-bottom:0;}
-    .plan-block-title{font-family:'Noto Serif TC',serif;font-size:19px;font-weight:700;color:#111111;line-height:1.3;}
+    .plan-block-header{padding:18px 24px;border-bottom:1px solid var(--border);background:rgba(58,88,112,0.04);display:flex;flex-direction:column;gap:6px;}
+    .plan-block-date{font-size:14px;letter-spacing:0.08em;color:#111111;text-transform:none;font-weight:800;margin-bottom:0;}
+    .plan-block-title{font-family:'Noto Serif TC',serif;font-size:20px;font-weight:800;color:#111111;line-height:1.25;}
     .plan-cols{display:grid;grid-template-columns:1fr 1fr;}
     .plan-col{padding:20px 22px;}
     .plan-col:first-child{border-right:1px solid var(--border);}
