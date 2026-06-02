@@ -37,11 +37,22 @@ body{background:var(--bg);color:var(--text);font-family:'Zen Kaku Gothic New',sa
 #nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(247,244,239,0.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:background 0.3s;}
 .nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px;}
 .nav-logo{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:var(--gold);letter-spacing:0.05em;white-space:nowrap;}
-.nav-links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;}
+.nav-links{display:flex;gap:8px;align-items:center;overflow-x:auto;scrollbar-width:none;}
 .nav-links::-webkit-scrollbar{display:none;}
+.nav-days{display:flex;gap:4px;align-items:center;overflow-x:auto;}
+.nav-select-wrap{display:none;align-items:center;}
+.nav-select{padding:8px 12px;font-size:13px;border:1px solid var(--border2);border-radius:22px;background:rgba(255,255,255,0.95);color:var(--text);min-width:152px;outline:none;}
+.nav-select:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(138,106,48,0.12);}
 .nav-link{padding:6px 14px;font-size:13px;letter-spacing:0.2em;color:var(--text2);text-decoration:none;border-radius:var(--radius);transition:color 0.2s,background 0.2s;white-space:nowrap;}
 .nav-link:hover{color:var(--text);background:rgba(0,0,0,0.04);}
 .nav-link.active{color:var(--gold);background:rgba(138,106,48,0.08);}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+
+@media(max-width:768px){
+  .nav-days{display:none;}
+  .nav-select-wrap{display:flex;}
+  .nav-select{min-width:120px;}
+}
 
 /* ── HERO ── */
 #hero{position:relative;height:100vh;min-height:600px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;}
@@ -94,8 +105,8 @@ body{background:var(--bg);color:var(--text);font-family:'Zen Kaku Gothic New',sa
 .onsen-pill{background:rgba(160,88,64,0.1);color:var(--onsen-light);border:1px solid rgba(160,88,64,0.25);}
 .gold-pill{background:rgba(138,106,48,0.1);color:var(--gold-light);border:1px solid rgba(138,106,48,0.25);}
 .city-pill{background:rgba(58,88,112,0.1);color:var(--city);border:1px solid rgba(58,88,112,0.25);}
-.day-title{font-family:'Noto Serif TC',serif;font-size:clamp(24px,3.5vw,34px);font-weight:600;color:var(--text);line-height:1.35;}
-.day-subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:var(--text2);margin-top:4px;}
+.day-title{font-family:'Noto Serif TC',serif;font-size:clamp(28px,4vw,38px);font-weight:700;color:#13100e;line-height:1.25;}
+.day-subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:var(--text);margin-top:6px;line-height:1.4;}
 
 /* transport bar */
 .transport-bar{display:flex;align-items:center;gap:14px;padding:12px 18px;background:var(--card);border-left:3px solid var(--gold);margin-bottom:40px;flex-wrap:wrap;box-shadow:var(--shadow);}
@@ -221,13 +232,27 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
   <div class="nav-inner">
     <div class="nav-logo">Tokyo · Karuizawa · Kusatsu</div>
     <div class="nav-links">
+      <div class="nav-days">
+        <a class="nav-link" href="#day1">Day 1</a>
+        <a class="nav-link" href="#day2">Day 2</a>
+        <a class="nav-link" href="#day3">Day 3</a>
+        <a class="nav-link" href="#day4">Day 4</a>
+        <a class="nav-link" href="#day57">Day 5–7</a>
+        <a class="nav-link" href="#day8">Day 8</a>
+      </div>
+      <div class="nav-select-wrap">
+        <label for="day-select" class="sr-only">選擇行程日</label>
+        <select id="day-select" class="nav-select" onchange="if(this.value) location.hash = this.value;">
+          <option value="">選擇日期</option>
+          <option value="#day1">Day 1</option>
+          <option value="#day2">Day 2</option>
+          <option value="#day3">Day 3</option>
+          <option value="#day4">Day 4</option>
+          <option value="#day57">Day 5–7</option>
+          <option value="#day8">Day 8</option>
+        </select>
+      </div>
       <a class="nav-link" href="#route">路線</a>
-      <a class="nav-link" href="#day1">Day 1</a>
-      <a class="nav-link" href="#day2">Day 2</a>
-      <a class="nav-link" href="#day3">Day 3</a>
-      <a class="nav-link" href="#day4">Day 4</a>
-      <a class="nav-link" href="#day57">Day 5–7</a>
-      <a class="nav-link" href="#day8">Day 8</a>
       <a class="nav-link" href="#accommodation">住宿</a>
       <a class="nav-link" href="#budget">預算</a>
       <a class="nav-link" href="#tips">提醒</a>
@@ -1077,9 +1102,9 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
 
     <style>
     .plan-block{background:var(--card);border:1px solid var(--border);box-shadow:var(--shadow);margin-bottom:20px;}
-    .plan-block-header{padding:14px 22px;border-bottom:1px solid var(--border);background:rgba(58,88,112,0.04);}
-    .plan-block-date{font-size:11px;letter-spacing:0.4em;color:var(--city);text-transform:uppercase;margin-bottom:4px;}
-    .plan-block-title{font-family:'Noto Serif TC',serif;font-size:17px;font-weight:600;color:var(--text);line-height:1.35;}
+    .plan-block-header{padding:16px 24px;border-bottom:1px solid var(--border);background:rgba(58,88,112,0.04);display:flex;flex-direction:column;gap:6px;}
+    .plan-block-date{font-size:14px;letter-spacing:0.05em;color:#111111;text-transform:none;font-weight:800;margin-bottom:0;}
+    .plan-block-title{font-family:'Noto Serif TC',serif;font-size:19px;font-weight:700;color:#111111;line-height:1.3;}
     .plan-cols{display:grid;grid-template-columns:1fr 1fr;}
     .plan-col{padding:20px 22px;}
     .plan-col:first-child{border-right:1px solid var(--border);}
@@ -1659,7 +1684,7 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
           <div style="font-size:14px;color:var(--text2);">去程 Skyliner</div>
           <div style="font-size:15px;color:var(--text);font-family:'Noto Serif TC',serif;">京成 Skyliner 官網票</div>
           <div style="font-size:14px;color:var(--text2);">Face Express 刷臉進站 · 成田 → 上野</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--text);text-align:right;">¥2,300</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--text);text-align:right;">¥2,310</div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 2fr 2fr 110px;padding:13px 20px;gap:12px;border-bottom:1px solid var(--border);align-items:center;">
           <div style="font-size:14px;color:var(--text2);">生活餐雜</div>
