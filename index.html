@@ -638,16 +638,20 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
         <span style="font-size:14px;color:#6a6460;">Day 2–4 · 輕井澤・草津溫泉</span>
       </div>
       <div style="display:flex;align-items:center;gap:8px;">
-        <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#4a90d9;flex-shrink:0;"></span>
-        <span style="font-size:14px;color:#6a6460;">Day 5 · 豪德寺・吉祥寺</span>
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;">
         <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#48a868;flex-shrink:0;"></span>
-        <span style="font-size:14px;color:#6a6460;">Day 6 · 鎌倉・江之島</span>
+        <span style="font-size:14px;color:#6a6460;">Day 5 · 鎌倉・江之島</span>
       </div>
       <div style="display:flex;align-items:center;gap:8px;">
         <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#d4a830;flex-shrink:0;"></span>
-        <span style="font-size:14px;color:#6a6460;">Day 7–8 · 東京市區・成田</span>
+        <span style="font-size:14px;color:#6a6460;">Day 6 · 秋葉原・銀座</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#4a90d9;flex-shrink:0;"></span>
+        <span style="font-size:14px;color:#6a6460;">Day 7 · 豪德寺・吉祥寺</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#d4a830;flex-shrink:0;"></span>
+        <span style="font-size:14px;color:#6a6460;">Day 8 · 上野・成田</span>
       </div>
       <div style="display:flex;align-items:center;gap:8px;">
         <span style="display:inline-block;width:28px;height:2px;background:#e8803a;border-top:2px dashed #e8803a;flex-shrink:0;"></span>
@@ -681,9 +685,9 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
       { latlng: [36.3484,  138.6006], label: '輕井澤',          day: 'Day 2 · 6/27',  color: '#e8803a', emoji: '🌿' },
       { latlng: [36.6213,  138.5961], label: '草津溫泉',        day: 'Day 3 · 6/28',  color: '#e8803a', emoji: '♨️' },
       { latlng: [36.3484,  138.6006], label: '輕井澤 Outlet',   day: 'Day 4 · 6/29',  color: '#e8803a', emoji: '🛍' },
-      { latlng: [35.6503,  139.6358], label: '豪德寺・吉祥寺',  day: 'Day 5 · 6/30',  color: '#4a90d9', emoji: '🐱' },
-      { latlng: [35.3193,  139.5467], label: '鎌倉・江之島',    day: 'Day 6 · 7/1',   color: '#48a868', emoji: '🌊' },
-      { latlng: [35.6938,  139.7036], label: '新宿・銀座',      day: 'Day 7 · 7/2',   color: '#d4a830', emoji: '🗼' },
+      { latlng: [35.3193,  139.5467], label: '鎌倉・江之島',    day: 'Day 5 · 6/30',  color: '#48a868', emoji: '🌊' },
+      { latlng: [35.6850,  139.7700], label: '秋葉原・銀座',    day: 'Day 6 · 7/1',   color: '#d4a830', emoji: '🛍' },
+      { latlng: [35.6503,  139.6358], label: '豪德寺・吉祥寺',  day: 'Day 7 · 7/2',   color: '#4a90d9', emoji: '🐱' },
       { latlng: [35.7141,  139.7774], label: '上野 アメ横',     day: 'Day 8 · 7/3',   color: '#d4a830', emoji: '🛒' },
       { latlng: [35.7720,  140.3929], label: '成田機場',        day: 'Day 8 · 7/3',   color: '#d4a830', emoji: '✈️' },
     ];
@@ -1087,7 +1091,7 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
           <span class="day-date-pill city-pill">Day 5–7 · 6月30日 – 7月2日</span>
         </div>
         <div class="day-title">東京市區深度探索</div>
-        <div class="day-subtitle">吉祥寺・ami cafe・龜有・藏前・銀座・神保町</div>
+        <div class="day-subtitle">鎌倉・龜有・秋葉原・銀座・吉祥寺・表參道・神保町</div>
       </div>
     </div>
 
@@ -1097,10 +1101,13 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
     .plan-block-date{font-size:14px;letter-spacing:0.08em;color:var(--pine);text-transform:none;font-weight:800;margin-bottom:0;}
     .plan-block-title{font-family:'Noto Serif TC',serif;font-size:20px;font-weight:800;color:#111111;line-height:1.25;}
     .plan-cols{display:grid;grid-template-columns:1fr 1fr;}
+    .plan-cols-3{grid-template-columns:1fr 1fr 1fr;}
     .plan-col{padding:20px 22px;}
-    .plan-col:first-child{border-right:1px solid var(--border);}
+    .plan-col:not(:last-child){border-right:1px solid var(--border);}
+    .plan-single{padding:20px 22px;}
     .plan-label-a{font-size:10px;letter-spacing:0.4em;text-transform:uppercase;color:var(--pine);margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid rgba(74,122,90,0.18);}
     .plan-label-b{font-size:10px;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid rgba(138,106,48,0.18);}
+    .plan-label-c{font-size:10px;letter-spacing:0.4em;text-transform:uppercase;color:var(--city);margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid rgba(58,88,112,0.18);}
     .plan-text{font-size:14px;line-height:1.9;color:var(--text2);}
     .plan-text strong{color:var(--text);}
     .plan-note{margin-top:10px;padding:7px 11px;background:rgba(200,40,45,0.05);border-left:2px solid #c8282d;font-size:13px;color:var(--text2);line-height:1.7;}
@@ -1110,16 +1117,138 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
     .plan-list li::before{content:counter(step);counter-increment:step;position:absolute;left:0;top:8px;font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--text3);line-height:1;}
     .plan-list li strong{color:var(--text);}
     .plan-section{font-size:10px;letter-spacing:0.35em;color:var(--text3);text-transform:uppercase;padding-top:10px;margin:14px 0 4px;border-top:1px solid var(--border);}
-    @media(max-width:640px){.plan-cols{grid-template-columns:1fr;}.plan-col:first-child{border-right:none;border-bottom:1px solid var(--border);}}
+    @media(max-width:640px){.plan-cols{grid-template-columns:1fr;}.plan-cols-3{grid-template-columns:1fr;}.plan-col:not(:last-child){border-right:none;border-bottom:1px solid var(--border);}}
     </style>
 
     <!-- Day 5 · 6/30 -->
     <div class="plan-block">
       <div class="plan-block-header">
         <div class="plan-block-date">Day 5 · 6/30（二）· 飛飛加班流浪日（地鐵 72H 券啟用）</div>
-        <div class="plan-block-title">吉祥寺 vs. 表參道・代官山・中目黑</div>
+        <div class="plan-block-title">鎌倉・江之島海景 vs. 龜有烏龍派出所＋藏前文青慢遊 vs. 神保町・谷根千下町</div>
       </div>
-      <div class="plan-cols">
+      <div class="plan-cols plan-cols-3">
+        <div class="plan-col">
+          <div class="plan-label-a">Plan A · 鎌倉與江之島一日遊</div>
+          <div class="plan-note" style="margin-top:0;margin-bottom:10px;">💡 除搭江之電外，天氣好強烈推薦在鎌倉站租借<strong>電動腳踏車</strong>——沿湘南海岸公路騎行，機動性超高。</div>
+          <div class="plan-section">🌅 上午・鎌倉車站周邊</div>
+          <ol class="plan-list">
+            <li><strong>長頸鹿咖哩餅</strong>：熱銷百萬個、連三年金賞，外皮酥軟、內餡滿滿咖哩與牽絲起司。</li>
+            <li><strong>客製化刻字筷子</strong>：免費雕刻名字需約 30 分鐘，<strong>一到就先下單</strong>，吃完飯再來取。</li>
+            <li><strong>7 道前菜洋食午餐</strong>：點「雙醬蛋包飯」（白醬雞肉＋黑醬紅酒燉牛肉）或鮮甜海膽蛋捲，沾麵包吃絕配。</li>
+          </ol>
+          <div class="plan-section">⛩️ 下午・神社巡禮</div>
+          <ol class="plan-list">
+            <li><strong>鶴岡八幡宮</strong>：日本三大八幡宮，壯觀大石階，鐮倉信仰中心。</li>
+            <li><strong>錢洗辨財天</strong>：先租竹籃買線香，走進山洞用水洗滌鈔票祈財運；洗完用紙巾壓乾、別甩！另有「水籤」放入水面浮現運勢。</li>
+            <li><strong>佐助稻荷神社</strong>：連綿紅色鳥居與狐狸雕像，濃濃小京都氛圍，可買 Sasuke 狗狗御守。</li>
+          </ol>
+          <div class="plan-section">🌊 傍晚・江之島夕陽海鮮</div>
+          <ol class="plan-list">
+            <li><strong>江之島觀景台</strong>：復古氛圍如九份，往上走到觀景台，天氣好可見富士山剪影。</li>
+            <li><strong>巨大章魚仙貝</strong>：整隻章魚高壓製成超酥脆（⚠️ 店家約傍晚 6 點打烊，提早排隊）。</li>
+            <li><strong>湘南「吻仔魚」</strong>：必吃！生吻仔魚丼、釜揚丼，或路邊吻仔魚可樂餅解饞。</li>
+            <li>🦅 <strong>老鷹警報</strong>：在海邊吃東西小心天上老鷹俯衝搶食，建議在有遮蔽處用餐。</li>
+            <li>搭車返回茅場町<strong>飛飛家</strong>過夜，明天一早再正式搬行李去藏前。</li>
+          </ol>
+        </div>
+        <div class="plan-col">
+          <div class="plan-label-b">Plan B · 龜有烏龍派出所＋藏前</div>
+          <div class="plan-section">上午・龜有烏龍派出所</div>
+          <ol class="plan-list">
+            <li><strong>烏龍派出所紀念館</strong>：一早衝龜有，體驗日文改名機、100 日圓漫畫運勢扭蛋、木魚版太鼓達人、摸鏡面金庫引爆警報器。</li>
+            <li><strong>香取神社</strong>：購買氣勢爆棚的「武士刀勝守」或適合運動員的「劍腳御守」。</li>
+            <li><strong>橋下秘境</strong>：去高架橋下廢棄藝術中心，逛倫敦黑膠唱片行與 A24 電影劇本書店，感受火車從頭頂轟鳴而過的震撼。</li>
+          </ol>
+          <div class="plan-section">下午・藏前職人尋寶</div>
+          <ol class="plan-list">
+            <li><strong>藏前「市原野之」</strong>：挖寶百年藤編職人老店，帶走手工野餐籃或珠寶盒。</li>
+            <li><strong>龜之子束子</strong>：購買造型可愛、抗菌快乾的洗碗海綿或質感刷具，包裝精美適合送禮。</li>
+            <li><strong>可麗露沙發區</strong>：2 樓粉色沙發內用，敲擊「外皮如磚頭般酥脆」的蘭姆酒香可麗露，搭配解構式提拉米蘇。</li>
+            <li><strong>Pelican 麵包店</strong>（建議預約）：80 年歷史白吐司，外皮焦香 Q 彈、內裡入口即化。</li>
+          </ol>
+          <div class="plan-section">傍晚・隅田川畔夜景</div>
+          <ol class="plan-list">
+            <li><strong>Riverside Cafe Cielo y Rio</strong>（露台區）：5 點前入場費較便宜，點杯飲料就能將河畔、金色便便與晴空塔無敵美景一次收進眼底。</li>
+            <li>返回飛飛家：搭電車回茅場町過夜，明天一早再搬行李去藏前。</li>
+          </ol>
+          <div class="plan-note">✨ 烏龍派出所紀念館 <strong>現場無售票，必須事先網路預約</strong></div>
+        </div>
+        <div class="plan-col">
+          <div class="plan-label-c">Plan C · 神保町＋日暮里・谷根千</div>
+          <div class="plan-section">上午・神保町復古時光</div>
+          <ol class="plan-list">
+            <li><strong>復古喫茶店</strong>：品嚐正宗「不攪拌的維也納咖啡」（黑咖啡加鮮奶油，體驗苦甜交織層次）。</li>
+            <li><strong>西服店轉型小店</strong>：購買用高級西裝布料做成的質感口金包，或鮭魚卵領帶、昭和感海報。</li>
+            <li><strong>隱密小神社</strong>：購買極易秒殺的「強運」或「金運」言靈貼紙貼在手機背後祈福。</li>
+          </ol>
+          <div class="plan-section">午餐・復古電梯印度咖哩</div>
+          <ol class="plan-list">
+            <li>隱身三角建築 4 樓、需搭<strong>手動復古電梯</strong>才能抵達，香料後勁十足，窗外是明治大學歐式建築街景。</li>
+          </ol>
+          <div class="plan-section">下午・日暮里與谷根千散策</div>
+          <ol class="plan-list">
+            <li><strong>日暮里草莓三明治</strong>：50 年歷史、內餡爆滿的復古草莓鮮奶油三明治。</li>
+            <li><strong>根津神社</strong>：欣賞壯觀的千本鳥居。</li>
+            <li><strong>石窯超級泡芙</strong>：古民家改建甜點店，外殼如法式長棍般酥脆、帶堅果香氣。</li>
+          </ol>
+          <div class="plan-section">晚餐・谷中銀座異國料理</div>
+          <ol class="plan-list">
+            <li><strong>谷中銀座中東料理</strong>：席地而坐的道地伊朗羊肉燉湯配烤餅，老闆熱情、氛圍歡樂。</li>
+            <li><strong>和栗蒙布朗冰淇淋</strong>：嚴選和栗製作，飯後完美收尾。</li>
+            <li>搭電車返回茅場町飛飛家過夜。</li>
+          </ol>
+          <div class="plan-note">💡 此方案可彈性安排在 <strong>6/30 或 7/2</strong>，依天氣與體力替換</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Day 6 · 7/01 -->
+    <div class="plan-block">
+      <div class="plan-block-header">
+        <div class="plan-block-date">Day 6 · 7/01（三）· 體力彈性日（一早先搬行李至東橫 INN 藏前寄放）</div>
+        <div class="plan-block-title">秋葉原電器尋寶 ➔ 銀座精準血拼 ➔ 與戰友敘舊</div>
+      </div>
+      <div class="plan-single">
+        <div class="plan-section">上午・秋葉原電器尋寶</div>
+        <ol class="plan-list">
+          <li><strong>田中電機</strong>（秋葉原本店）：挖寶復古真空管、特殊耳機線材與稀有電子零件，骨灰級電器迷的尋寶聖地。</li>
+          <li><strong>Big Camera</strong>（秋葉原本店）：相機、家電、手機配件齊全，多樓層分類清晰，退稅服務完善。</li>
+        </ol>
+        <div class="plan-section">中午・回藏前放戰利品</div>
+        <ol class="plan-list">
+          <li>步行或搭電車回<strong>東橫INN藏前</strong>，把秋葉原戰利品先卸下，輕裝再出發逛銀座。</li>
+        </ol>
+        <div class="plan-section">下午・銀座精準血拼</div>
+        <ol class="plan-list">
+          <li><strong>Montbell</strong>（東京京橋店）</li>
+          <li><strong>OS drug</strong>（銀座店）</li>
+          <li><strong>無印良品</strong> 銀座旗艦店</li>
+          <li><strong>百年木村屋</strong>：購買北海道牛奶紅豆麵包或抹茶麻糬麵包。</li>
+          <li><strong>葡萄大福</strong>：路過 A1 出口附近，買一顆皮薄多汁的巨無霸葡萄大福。</li>
+          <li><strong>Uniqlo</strong> 銀座旗艦店</li>
+          <li><strong>Onitsuka Tiger 旗艦店</strong>：精準試穿、購買鞋款並退稅。</li>
+        </ol>
+        <div class="plan-note">⚠️ 新增 4 家旗艦店後動線拉長（秋葉原→藏前→銀座 7 丁目），且多數店鋪 <strong>10:30–11:00 才開門</strong>，建議精簡 1–2 家或提早出發，避免壓縮午餐與晚上的聚餐時間</div>
+        <div class="plan-section">午餐・銀座神級壽司</div>
+        <ol class="plan-list">
+          <li><strong>美登利壽司（銀座店）</strong>：超高 CP 值套餐（鮪魚、海膽、鮭魚卵），新鮮入口即化，非常值得排隊。</li>
+        </ol>
+        <div class="plan-section">晚上・戰友敘舊＋淺草夜散策</div>
+        <ol class="plan-list">
+          <li>與正在服<strong>替代役的朋友</strong>相約晚餐，敘舊聊近況。</li>
+          <li><strong>淺草夜間散策</strong>：晚餐後沿淺草寺、雷門周邊悠閒散步，感受夜晚燈火與道地小巷氛圍。</li>
+          <li><strong>東橫 INN 藏前</strong>：步行回飯店 Check-in 過夜，正式展開兩晚的藏前生活。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Day 7 · 7/02 -->
+    <div class="plan-block" style="margin-bottom:0;">
+      <div class="plan-block-header">
+        <div class="plan-block-date">Day 7 · 7/02（四）· 不用搬家，藏前直接出發</div>
+        <div class="plan-block-title">豪德寺・吉祥寺・澀谷 vs. 表參道・代官山・中目黑・澀谷 vs. 神保町・谷根千下町</div>
+      </div>
+      <div class="plan-cols plan-cols-3">
         <div class="plan-col">
           <div class="plan-label-a">Plan A · 豪德寺＋吉祥寺＋澀谷</div>
           <div class="plan-section">上午・豪德寺與世田谷線</div>
@@ -1169,97 +1298,8 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
           </ol>
           <div class="plan-note">✨ ami cafe 為 <strong>2026 年 10 月底前期間限定</strong>，內用限時 30 分鐘，強烈建議預約</div>
         </div>
-      </div>
-    </div>
-
-    <!-- Day 6 · 7/01 -->
-    <div class="plan-block">
-      <div class="plan-block-header">
-        <div class="plan-block-date">Day 6 · 7/01（三）· 體力彈性日（一早先搬行李至東橫 INN 藏前寄放）</div>
-        <div class="plan-block-title">鎌倉・江之島海景 vs. 龜有烏龍派出所＋藏前文青慢遊</div>
-      </div>
-      <div class="plan-cols">
         <div class="plan-col">
-          <div class="plan-label-a">Plan A · 鎌倉與江之島一日遊</div>
-          <div class="plan-note" style="margin-top:0;margin-bottom:10px;">💡 除搭江之電外，天氣好強烈推薦在鎌倉站租借<strong>電動腳踏車</strong>——沿湘南海岸公路騎行，機動性超高。</div>
-          <div class="plan-section">🌅 上午・鎌倉車站周邊</div>
-          <ol class="plan-list">
-            <li><strong>長頸鹿咖哩餅</strong>：熱銷百萬個、連三年金賞，外皮酥軟、內餡滿滿咖哩與牽絲起司。</li>
-            <li><strong>客製化刻字筷子</strong>：免費雕刻名字需約 30 分鐘，<strong>一到就先下單</strong>，吃完飯再來取。</li>
-            <li><strong>7 道前菜洋食午餐</strong>：點「雙醬蛋包飯」（白醬雞肉＋黑醬紅酒燉牛肉）或鮮甜海膽蛋捲，沾麵包吃絕配。</li>
-          </ol>
-          <div class="plan-section">⛩️ 下午・神社巡禮</div>
-          <ol class="plan-list">
-            <li><strong>鶴岡八幡宮</strong>：日本三大八幡宮，壯觀大石階，鐮倉信仰中心。</li>
-            <li><strong>錢洗辨財天</strong>：先租竹籃買線香，走進山洞用水洗滌鈔票祈財運；洗完用紙巾壓乾、別甩！另有「水籤」放入水面浮現運勢。</li>
-            <li><strong>佐助稻荷神社</strong>：連綿紅色鳥居與狐狸雕像，濃濃小京都氛圍，可買 Sasuke 狗狗御守。</li>
-          </ol>
-          <div class="plan-section">🌊 傍晚・江之島夕陽海鮮</div>
-          <ol class="plan-list">
-            <li><strong>江之島觀景台</strong>：復古氛圍如九份，往上走到觀景台，天氣好可見富士山剪影。</li>
-            <li><strong>巨大章魚仙貝</strong>：整隻章魚高壓製成超酥脆（⚠️ 店家約傍晚 6 點打烊，提早排隊）。</li>
-            <li><strong>湘南「吻仔魚」</strong>：必吃！生吻仔魚丼、釜揚丼，或路邊吻仔魚可樂餅解饞。</li>
-            <li>🦅 <strong>老鷹警報</strong>：在海邊吃東西小心天上老鷹俯衝搶食，建議在有遮蔽處用餐。</li>
-            <li><strong>東橫 INN 藏前</strong>：晚上回飯店 Check-in，獨享舒適的個人 Me Time。</li>
-          </ol>
-        </div>
-        <div class="plan-col">
-          <div class="plan-label-b">Plan B · 龜有烏龍派出所＋藏前</div>
-          <div class="plan-section">上午・龜有烏龍派出所</div>
-          <ol class="plan-list">
-            <li><strong>烏龍派出所紀念館</strong>：一早衝龜有，體驗日文改名機、100 日圓漫畫運勢扭蛋、木魚版太鼓達人、摸鏡面金庫引爆警報器。</li>
-            <li><strong>香取神社</strong>：購買氣勢爆棚的「武士刀勝守」或適合運動員的「劍腳御守」。</li>
-            <li><strong>橋下秘境</strong>：去高架橋下廢棄藝術中心，逛倫敦黑膠唱片行與 A24 電影劇本書店，感受火車從頭頂轟鳴而過的震撼。</li>
-          </ol>
-          <div class="plan-section">下午・藏前職人尋寶</div>
-          <ol class="plan-list">
-            <li><strong>藏前「市原野之」</strong>：挖寶百年藤編職人老店，帶走手工野餐籃或珠寶盒。</li>
-            <li><strong>龜之子束子</strong>：購買造型可愛、抗菌快乾的洗碗海綿或質感刷具，包裝精美適合送禮。</li>
-            <li><strong>可麗露沙發區</strong>：2 樓粉色沙發內用，敲擊「外皮如磚頭般酥脆」的蘭姆酒香可麗露，搭配解構式提拉米蘇。</li>
-            <li><strong>Pelican 麵包店</strong>（建議預約）：80 年歷史白吐司，外皮焦香 Q 彈、內裡入口即化。</li>
-          </ol>
-          <div class="plan-section">傍晚・隅田川畔夜景</div>
-          <ol class="plan-list">
-            <li><strong>Riverside Cafe Cielo y Rio</strong>（露台區）：5 點前入場費較便宜，點杯飲料就能將河畔、金色便便與晴空塔無敵美景一次收進眼底。</li>
-            <li><strong>東橫 INN 藏前</strong>：直接步行回飯店 Check-in 滾床休息。</li>
-          </ol>
-          <div class="plan-note">✨ 烏龍派出所紀念館 <strong>現場無售票，必須事先網路預約</strong></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Day 7 · 7/02 -->
-    <div class="plan-block" style="margin-bottom:0;">
-      <div class="plan-block-header">
-        <div class="plan-block-date">Day 7 · 7/02（四）· 精準採購日（不用搬家，藏前直接出發）</div>
-        <div class="plan-block-title">銀座・豐洲 teamLab・月島 vs. 神保町・谷根千下町</div>
-      </div>
-      <div class="plan-cols">
-        <div class="plan-col">
-          <div class="plan-label-a">Plan A · 銀座採購＋豐洲 teamLab＋月島</div>
-          <div class="plan-section">上午・銀座精準血拼</div>
-          <ol class="plan-list">
-            <li><strong>Onitsuka Tiger 旗艦店</strong>：精準試穿、購買鞋款並退稅。</li>
-            <li><strong>百年木村屋</strong>：購買北海道牛奶紅豆麵包或抹茶麻糬麵包。</li>
-            <li><strong>葡萄大福</strong>：路過 A1 出口附近，買一顆皮薄多汁的巨無霸葡萄大福。</li>
-          </ol>
-          <div class="plan-section">午餐・銀座神級壽司</div>
-          <ol class="plan-list">
-            <li><strong>美登利壽司（銀座店）</strong>：超高 CP 值套餐（鮪魚、海膽、鮭魚卵），新鮮入口即化，非常值得排隊。</li>
-          </ol>
-          <div class="plan-section">下午・豐洲 teamLab Planets</div>
-          <ol class="plan-list">
-            <li><strong>teamLab Planets</strong>：脫鞋走進水區，躺在充滿真實蘭花的花園區，成為藝術的一部分。</li>
-          </ol>
-          <div class="plan-note">⚠️ teamLab Planets <strong>需提前線上購票</strong>，現場通常無票</div>
-          <div class="plan-section">晚餐・月島文字燒</div>
-          <ol class="plan-list">
-            <li><strong>月島文字燒街</strong>：找間當地人愛去的鐵板餐廳，體驗明太子年糕文字燒的鹹香與鍋巴口感。</li>
-            <li>若還有體力，晚上加碼上<strong>東京鐵塔</strong>看夜景。</li>
-          </ol>
-        </div>
-        <div class="plan-col">
-          <div class="plan-label-b">Plan B · 神保町＋日暮里・谷根千</div>
+          <div class="plan-label-c">Plan C · 神保町＋日暮里・谷根千</div>
           <div class="plan-section">上午・神保町復古時光</div>
           <ol class="plan-list">
             <li><strong>復古喫茶店</strong>：品嚐正宗「不攪拌的維也納咖啡」（黑咖啡加鮮奶油，體驗苦甜交織層次）。</li>
@@ -1280,7 +1320,9 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;ba
           <ol class="plan-list">
             <li><strong>谷中銀座中東料理</strong>：席地而坐的道地伊朗羊肉燉湯配烤餅，老闆熱情、氛圍歡樂。</li>
             <li><strong>和栗蒙布朗冰淇淋</strong>：嚴選和栗製作，飯後完美收尾。</li>
+            <li>步行或搭電車回東橫INN藏前過夜。</li>
           </ol>
+          <div class="plan-note">💡 此方案可彈性安排在 <strong>6/30 或 7/2</strong>，依天氣與體力替換</div>
         </div>
       </div>
     </div>
